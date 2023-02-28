@@ -5,6 +5,8 @@ on: # rebuild any PRs and main branch changes
     branches:
       - master
       - 'releases/*'
+  workflow_dispatch:
+    
 
 jobs:
   build_and_test_action: # make sure build/ci work properly
